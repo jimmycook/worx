@@ -1,0 +1,18 @@
+body, html {
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  max-width: $containerWidth;
+  margin: auto;
+}
+
+.section {
+  &__dark {
+    background-image: url('../images/bg.png');
+  }
+}

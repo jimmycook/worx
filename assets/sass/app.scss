@@ -1,4 +1,8 @@
-body {
-  // Testing Parcel
-  background-color: rebeccapurple;
-}
+@import "../../node_modules/normalize.css/normalize.css";
+@import "variables";
+@import "base";
+@import "util";
+@import "components/header";
+@import "components/nav";
+// @import "components/carousel";
+@import "components/footer";
