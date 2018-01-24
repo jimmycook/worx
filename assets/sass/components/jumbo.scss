@@ -1,0 +1,8 @@
+.jumbo {
+  &__heading {
+    border-bottom: 4px $baseFontColor solid;
+  }
+  &__headingText {
+    max-width: 500px;
+  }
+}
