@@ -69,7 +69,11 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
+<<<<<<< HEAD
 })({19:[function(require,module,exports) {
+=======
+})({48:[function(require,module,exports) {
+>>>>>>> 9cc7e49455abaff0c9a8d68a0e3d181a13f74fa1
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +104,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],18:[function(require,module,exports) {
+},{}],32:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,7 +136,11 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
+<<<<<<< HEAD
 },{"./bundle-url":19}],0:[function(require,module,exports) {
+=======
+},{"./bundle-url":48}],0:[function(require,module,exports) {
+>>>>>>> 9cc7e49455abaff0c9a8d68a0e3d181a13f74fa1
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -150,7 +158,11 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
+<<<<<<< HEAD
   var ws = new WebSocket('ws://' + window.location.hostname + ':50038/');
+=======
+  var ws = new WebSocket('ws://' + window.location.hostname + ':62949/');
+>>>>>>> 9cc7e49455abaff0c9a8d68a0e3d181a13f74fa1
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
