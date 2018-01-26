@@ -1,8 +1,63 @@
+$outlineSize: 2px;
+$buttonBorderRadius: 5px;
+$height: 34px;
+$mWidth: 126px;
 .button {
   text-decoration: none;
-  text-transform: uppercase;
-  padding: 2px;
+  max-width: $mWidth;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 5px;
   &__green {
+    text-shadow: white 1px 1px 1px;     
+    color: black;
+    text-transform: uppercase;
     background-color: #8DFFC9;
+    border: 1px solid #9E9E9E;
+    box-shadow: white 1px 1px inset;
+    &:visited {
+      color: black;
+    }
+  }
+  &__email {
+    color: #555555;
+    background: linear-gradient(to bottom, white 0%, #DDDDDD 100%);
+    box-shadow: white 1px 1px inset;
+    position: absolute;
+    right: 5px;
+    top: 6px;
+    height: 45px;
+    width: 62px;
+    font-size: 14px;
+  }
+  &__social {
+    color: #555555;
+    background: linear-gradient(to bottom, white 0%, #DDDDDD 100%);
+    box-shadow: white 1px 1px inset;
+    height: 50px;
+    width: 50px;
+    margin-right: 0.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__container {
+    background-color: #DFDFDF;
+    // accounts for the outline and the border width
+    height: ($height + ($outlineSize * 2)+ 2);
+    width: ($mWidth + ($outlineSize * 2) + 2);
+    border-radius: $buttonBorderRadius;
+    position: relative;
+    .button {
+      position: absolute;
+      top: $outlineSize;
+      right: $outlineSize;
+      bottom: $outlineSize;
+      left: $outlineSize;
+    }
   }
 }

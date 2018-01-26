@@ -11,7 +11,7 @@
   <main>
 
 
-    <div class="section__dark">
+    <section class="section__dark">
       <div class="container">
         <header class="header drop--slight">
           <div class="header__line"></div>
@@ -22,7 +22,7 @@
               </a>
             </div>
             <div class="header__right">
-              <div class="search__container">
+              <div class="search__container hidden-xs">
                 <input type="text" class="search">
               </div>
               <nav class="nav">
@@ -36,21 +36,23 @@
           </div>
         </header>
 
-        <section class="carousel">
-          <div class="carousel__item active">
-            <img src="./assets/images/slider_1.jpg" alt="Slider image">
-          </div>
-          <div class="carousel__item">
-            <img src="./assets/images/slider_2.jpg" alt="Slider image">
-          </div>          
-          <div class="carousel__item">
-            <div class="map"></div>
-          </div>
-          <div class="carousel__controls">
-            <div class="prev drop__slight"></div>
-            <div class="next drop__slight"></div>          
-          </div>
-        </section>
+        <div class="shadow">
+          <section class="carousel">
+            <div class="carousel__item active">
+              <img src="./assets/images/slider_1.jpg" alt="Slider image">
+            </div>
+            <div class="carousel__item">
+              <img src="./assets/images/slider_2.jpg" alt="Slider image">
+            </div>          
+            <div class="carousel__item">
+              <div class="map"></div>
+            </div>
+            <div class="carousel__controls">
+              <div class="prev drop__slight"></div>
+              <div class="next drop__slight"></div>          
+            </div>
+          </section>
+        </div>
 
 
         <section class="jumbo">
@@ -69,7 +71,9 @@
             </div>
             <h4 class="about__title">Who we are</h4>
             <p class="about__content">Nulla ut elit nunc, sed porta justo. Etiam non facilisis ipsum. Etiam non urna eget ipsum posuere rhoncus ut sed velit. Morbi fringilla tristique adipiscing. Praesent </p>
-            <a href="#" class="button button__green">More</a>
+            <div class="button__container">
+              <a href="#" class="button button__green">More</a>
+            </div>
           </div>
           <div class="column">
             <div class="dots">
@@ -80,7 +84,9 @@
             </div>
             <h4 class="about__title">Who we are</h4>
             <p class="about__content">Nulla ut elit nunc, sed porta justo. Etiam non facilisis ipsum. Etiam non urna eget ipsum posuere rhoncus ut sed velit. Morbi fringilla tristique adipiscing. Praesent </p>
-            <a href="#" class="button button__green">More</a>
+            <div class="button__container">
+              <a href="#" class="button button__green">More</a>
+            </div>
           </div>
           <div class="column">
             <div class="dots">
@@ -91,13 +97,112 @@
             </div>
             <h4 class="about__title">Who we are</h4>
             <p class="about__content">Nulla ut elit nunc, sed porta justo. Etiam non facilisis ipsum. Etiam non urna eget ipsum posuere rhoncus ut sed velit. Morbi fringilla tristique adipiscing. Praesent </p>
-            <a href="#" class="button button__green">More</a>
+            <div class="button__container">
+              <a href="#" class="button button__green">More</a>
+            </div>
           </div>
         </div>
 
       </div>
-    </div>
+    </section>
 
+    <section class="container">      
+      <h3 class="mt-40">Take our word for it. Just look at our work.</h3>
+      <div class="work">
+        <div class="columns columns__noBlock">
+          <figure class="work__item column">
+            <img src="./assets/images/work_1.png" alt="Work">
+          </figure>
+          <figure class="work__item column">
+            <img src="./assets/images/work_2.png" alt="Work">
+          </figure>
+          <figure class="work__item column">
+            <img src="./assets/images/work_3.png" alt="Work">
+          </figure>
+          <figure class="work__item column">
+            <img src="./assets/images/work_4.png" alt="Work">
+          </figure>
+          <figure class="work__item column">
+            <img src="./assets/images/work_5.png" alt="Work">
+          </figure>
+          <figure class="work__item column">
+            <img src="./assets/images/work_6.png" alt="Work">
+          </figure>
+        </div>
+      </div>
+      <div class="columns lightText p-40">
+        <div class="column lh-2">
+          <p>Nulla ut elit nunc, sed porta justo. Etiam non facilisis ipsum. Etiam non urna eget ipsum posuere rhoncus ut sed velit. Morbi
+          fringilla tristique adipiscing. Praesent tellus nibh, dapibus at lobortis nec, rhoncus nec arcu. Aliquam erat volutpat. Fusce
+          ligula metus, semper vehicula placerat a, malesuada nec mauris. Etiam sem nunc, adipiscing vel volutpat id, vestibulum nec
+          est. Nunc ultricies venenatis augue, id porttitor arcu accumsan a. Integer convallis placerat lorem ut dapibus. Donec a cursus
+          nibh. Aliquam ut ligula neque, at adipiscing magna.</p>
+        </div>
+        <div class="column lh-2">
+          <p>Nulla ut elit nunc, sed porta justo. Etiam non facilisis ipsum. Etiam non urna eget ipsum posuere rhoncus ut sed velit.
+          Morbi fringilla tristique adipiscing. Praesent tellus nibh, dapibus at lobortis nec, rhoncus nec arcu. Aliquam erat volutpat.
+          Fusce ligula metus, semper vehicula placerat a, malesuada nec mauris. Etiam sem nunc, adipiscing vel volutpat id, vestibulum
+          nec est. Nunc ultricies venenatis augue, id porttitor arcu accumsan a. Integer convallis placerat lorem ut dapibus. Donec
+          a cursus nibh. Aliquam ut ligula neque, at adipiscing magna.</p>
+        </div>
+      </div>
+      <div class="emailSignup">
+        <input type="text" placeholder="Leave us your Email here">
+        <button class="button button__email">Join</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="columns">
+          <div class="column is-half">
+            <h5>Heading To Go here</h5>
+            <p class="lh-2 footer__copy">Ut eget metus nibh, nec scelerisque sem. Nulla dui purus, pellentesque sit amet rutrum vitae, lobortis nec diam. Fusce augue
+            arcu, volutpat eu facilisis suscipit, venenatis vehicula diam. Nullam venenatis, tortor eget semper tempus, ante ligula varius
+            nisi, in laoreet neque turpis id neque. Aenean varius porta eros, sit amet pharetra felis iaculis vel. Vestibulum imperdiet
+            pulvinar massa. Quisque et augue nec mi lobortis accumsan et vel tortor.</p>
+          </div>
+          <div class="column is-half">
+            <div class="columns">
+              <div class="column">
+                <h5>Contact Us</h5>
+                <div class="contact">
+                  <span class="contact__type">P |</span>(03) 9302 9220
+                </div>
+                <div class="contact">
+                  <span class="contact__type">E |</span><a href="mailto:info@emailtogohere.com">info@emailtogohere.com</a>
+                </div>
+                <div class="contact">
+                  <span class="contact__type">W |</span>
+                  <a href="http://www.yoursitehere.com" target="_blank">
+                    www.yoursitehere.com
+                  </a>
+                </div>
+                <div class="contact">
+                  <span class="contact__type">A |</span>53 Your Street to go here
+                </div>
+              </div>
+              <div class="column">
+                <h5>Get Social</h5>
+                <div class="social">
+                  <button class="button button__social">
+                    <img src="./assets/images/fb.png" alt="Facebook">
+                  </button>
+                  <button class="button button__social">
+                    <img src="./assets/images/rss.png" alt="RSS">
+                  </button>
+                  <button class="button button__social">
+                    <img src="./assets/images/twitter.png" alt="Twitter">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
   </main>
   <script src="./assets/js/app.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8_CkI9HKDna3js4Xh6RSvjSWmmHPoeYs&callback=initMap" async defer></script>

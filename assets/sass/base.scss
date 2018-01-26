@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:700');
-
-body, html {
+body,
+html {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
   color: $baseFontColor;
@@ -9,57 +8,62 @@ body, html {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
 .container {
   max-width: $containerWidth;
   margin: auto;
+  @include media-breakpoint-down(md) {
+    margin: 0 1rem;
+  }
+}
+
+@include media-breakpoint-down(xs) {
+  .hidden-mobile {
+    display: none
+  }
+}
+
+.columns {
+  display: flex;
+  margin: 0 -10px;
+  @include media-breakpoint-down(xs) {
+    display: block;
+    &__noBlock {
+      display: flex;
+    }
+  }
+}
+
+.column {
+  margin: 0 10px;
+  flex-grow: 1;
+  &.is-half {
+    flex-basis: 50%;
+  }
 }
 
 .section {
   &__dark {
     background-image: url('../images/bg.png');
-  }
-}
-
-h2 {
-  font-size: 1.875rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-}
-
-.columns {
-  display: flex;
-  margin: 0 -10px;  
-  // flex-wrap: wrap;
-}
-.column {
-  margin: 0 10px;
-}
-
-$dotSize: 6px;
-.dots {
-  display: flex;
-  padding: 15px 0;
-  div {
-    background-color: $baseFontColor;
-    height: $dotSize;
-    width: $dotSize;
-    border-radius: $dotSize;
-    margin-right: $dotSize;
-  }
-  div:nth-child(even) {
-    background-color: $lightFontColor;
-  }
-}
-
-.about {
-  &__content {
-    color: $lightFontColor;
-    font-size: 0.75rem;
-    line-height: 1.5rem;
-    padding: 0 0 1.5rem;
-    border-bottom: #A5A5A5 2px solid;
-  }
-  &__title {
-
+    padding-bottom: 50px;
   }
 }

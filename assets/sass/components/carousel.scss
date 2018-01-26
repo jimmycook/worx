@@ -1,8 +1,8 @@
 .carousel {
   background-color: white;
   height: 384px;
-  overflow: none;  
-  overflow: hidden;
+  overflow-x: hidden;
+  z-index: 1;
   position: relative;
   &__item {
     position: absolute;
@@ -11,6 +11,7 @@
     height: 374px;
     width: calc(100% - 10px);
     transition: 0.75s opacity ease-in-out;
+    overflow: hidden;
     opacity: 0;
     &.active {
       opacity: 1;
@@ -37,7 +38,6 @@
       background-image: url('../images/arrow_prev.png');
     }
     .next {
-      background-position: 7px 5px;
       transform: scaleX(-1);
     }
   }
@@ -51,5 +51,18 @@
   height: 374px;
   max-height: 500px;
 }
-
-
+.shadow {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;    
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    bottom: 0px;
+    left: 10%;
+    right: 10%;
+    width: 80%;
+    height: 50%;
+    border-radius: 100%;
+  }
+}
